@@ -1,0 +1,43 @@
+{% extends 'Quiz/dependencies.html' %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h1>Question Detail </h1>
+    <a href="{% url 'addQuestion' %}" class="btn btn-sm btn-info">Add Question</a>
+    <hr>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>question</th>
+            <th>category</th>
+            <th>option 1</th>
+            <th>option 2</th>
+            <th>option 3</th>
+            <th>option 4</th>
+            <th>answer</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for q in question %}
+                <tr>
+                    <td>{{ q.question }}</td>
+                    <td>{{ q.category }}</td>
+                    <td>{{ q.op1 }}</td>
+                    <td>{{ q.op2 }}</td>
+                    <td>{{ q.op3 }}</td>
+                    <td>{{ q.op4 }}</td>
+                    <td>{{ q.ans }}</td>
+                    <td>
+                        <a href="update/{{ q.id }}" class="btn btn-sm btn-info">Edit</a>
+                        <a href="delete/{{ q.id }}" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+
+{% endblock %}

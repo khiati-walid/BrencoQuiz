@@ -1,0 +1,1 @@
+web: gunicorn BrencoQuiz.wsgi --log-file -

@@ -1,0 +1,51 @@
+{% extends 'Quiz/dependencies.html' %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h1>Update Question</h1>
+    <hr>
+    <form action="/question/update/{{question.id}}" method="POST">
+        {% csrf_token %}
+            <div class="form-group">
+                <label for="">Question</label>
+                <input type="text" name="question" value="{{ question.question }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Category</label>
+                <select id="category" name="category" class="form-control">
+                    <option selected value="{{ question.category }}">{{ question.category }}</option>
+                    {% for cat in category %}
+                    <option value="{{ cat.id }}">{{ cat }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Option 1</label>
+                <input type="text" name="op1" value="{{question.op1}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Option 2</label>
+                <input type="text" name="op2" value="{{question.op2}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Option 3</label>
+                <input type="text" name="op3" value="{{ question.op3 }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Option 4</label>
+                <input type="text" name="op4" value="{{ question.op4 }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Answer</label>
+                <input type="text" name="ans" value="{{ question.ans }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Update Question</button>
+                <a href="{% url 'questions' %}" class="btn btn-info">Show Details</a>
+            </div>
+             </form>
+            </div>
+
+
+{% endblock %}

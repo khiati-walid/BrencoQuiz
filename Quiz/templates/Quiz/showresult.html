@@ -1,0 +1,40 @@
+{% extends 'Quiz/dependencies.html' %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h1>Results </h1>
+    <hr>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>user</th>
+            <th>score</th>
+            <th>wrong</th>
+            <th>correct</th>
+            <th>total</th>
+            <th>percent</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for r in result %}
+                <tr>
+                    <td>{{ r.user }}</td>
+                    <td>{{ r.score }}</td>
+                    <td>{{ r.wrong }}</td>
+                    <td>{{ r.correct }}</td>
+                    <td>{{ r.total }}</td>
+                    <td>{{ r.percent }}%</td>
+                    <td>
+                        <a href="delete/{{ r.id }}"
+                           class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+
+{% endblock %}
