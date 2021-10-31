@@ -68,7 +68,7 @@ In order to use the token authentication, access the following paths:
 - WhiteNoise
 - Gunicorn
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#BrencoQuiz-khiati)
 
 ---
 
@@ -93,7 +93,7 @@ $ python manage.py migrate
 ```html
 $ python manage.py runserver
 ```
-[Back To The Top](#read-me-template)
+[Back To The Top](#BrencoQuiz-khiati)
 
 ---
 
@@ -106,12 +106,13 @@ https://brencoquiz-khiati.herokuapp.com
 - username: rairon
 - password: 111
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#BrencoQuiz-khiati)
 
 ---
 
 ## License
 
+MIT License
 
 Copyright (c) [2021] [Khiati Walid]
 
@@ -126,7 +127,7 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#BrencoQuiz-khiati)
 
 ---
 ## Author Info
