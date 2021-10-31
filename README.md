@@ -25,12 +25,11 @@ A simple Django quiz application with built-in features from the framework.
   -  Token authentication (django-rest)	
 ##### PS: 
 In order to use the token authentication, access the following paths:
-```html
+
 /api/auth/register/
-```
-```html
+
 /api/auth/login/
-```
+
 ---
 #### Admin
 
@@ -133,5 +132,4 @@ copies or substantial portions of the Software.
 ## Author Info
 
 - LinkedIn - [@KhiatiWalid](https://www.linkedin.com/in/khiati-walid/)
-
 
