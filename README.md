@@ -47,7 +47,7 @@ In order to use the token authentication, access the following paths:
    - Filter questions by categories
    - Participate in Quiz and see his own Result
    
-[Back To The Top](#read-me-template)
+[Back To The Top](#BrencoQuiz-khiati)
 
 ---
 
